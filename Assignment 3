@@ -1,16 +1,11 @@
 def is_right_angled(s1, s2, s3):
-    
 	sides = [s1, s2, s3]
 	sides.sort()
-
 	return (sides[0] ** 2 + sides[1] ** 2) == sides[2] ** 2
-
 print("Right-Angled Triangle Checker")
-
 s1 = float(input("Enter the first side: "))
 s2 = float(input("Enter the second side: "))
 s3 = float(input("Enter the third side: "))
-
 if s1 > 0 and s2 > 0 and s3 > 0:
 	if is_right_angled(s1, s2, s3):
 		print("The triangle is a right-angled triangle.")
