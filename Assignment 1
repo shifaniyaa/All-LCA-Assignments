@@ -1,7 +1,4 @@
-"""Assignment 1: Operations on List, Tuple and Dictionary."""
-
-
-def main():
+	def main():
 	# A list is ordered, mutable, and allows duplicate values.
 	numbers = [10, 20, 30, 20]
 	print("LIST OPERATIONS")
