@@ -1,1 +1,18 @@
+import pandas as pd
 
+data = {
+    'Name': ['Amit', 'Priya', 'Amit'],
+    'Marks': [85, 90, None],
+    'City': ['Pune', 'Mumbai', 'Pune']
+}
+
+df = pd.DataFrame(data)
+
+df['Marks'] = df['Marks'].fillna(df['Marks'].mean())
+df = df.drop_duplicates()
+
+print("Cleaned Data:")
+print(df)
+
+print("\nStudents scoring above 80:")
+print(df.loc[df['Marks'] > 80])
